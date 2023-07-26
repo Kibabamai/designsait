@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #242424;
+  height: 50px;
+  font-size: 0;
+}
+.logo,
+.phone {
+  height: 50px;
+  width: 40px;
+  object-fit: contain;
+  filter: invert(100%);
+  display: block;
+}
+.phone{
+display: inline-block;
+vertical-align: top;
+}
+
+.dropdown {
+  display: inline-block;
+  /* background-color: blueviolet; */
+}
+.header a {
+  line-height: 50px;
+  vertical-align: top;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Roboto", sans-serif;
+  z-index: 10;
+  position: relative;
+  background-color: #242424;
+  font-size: 16px;
+}
+nav {
+  /* display: none; */
+  background-color: #242424;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: 500ms;
+}
+.headerright {
+  float: right;
+}
+.header p {
+  display: inline-block;
+  vertical-align: top;
+}
+.headerright img {
+  vertical-align: middle;
+}
+.call{
+  color: white;
+  background-color: #242424;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.623);
+  margin-top: 10px;
+  font-size: 16px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+nav .flatType{
+  display: block;
+}
+.dropdown:hover nav{
+  transform: translateY(0);
+}
+
